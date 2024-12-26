@@ -11,6 +11,20 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+    hibernate:
+      ddl-auto: update
+#    hibernate:
+#      ddl-auto: create
 
   flyway:
     enabled: true
+
+springdoc:
+  api-docs:
+    path: /api/api-docs
+  swagger-ui:
+    path: /swagger/index.html
+
+movieflix:
+  security:
+    secret: "palavra-secreta"
